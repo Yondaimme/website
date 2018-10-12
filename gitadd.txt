@@ -1,4 +1,28 @@
-heeeeeeellloooooooooo
+Module Module1
+
+    Sub Main()
+
+        Dim X As Integer
+        Dim Y As Integer
+
+        Try
+            Console.WriteLine("Please enter first number")
+            X = Console.ReadLine()
+
+            Console.WriteLine("Please enter second number")
+            Y = Console.ReadLine()
+
+        Catch ex As Exception
+
+            Console.WriteLine(ex.Message)
+
+        End Try
 
 
-heloooooooooooooo desktop
+        Console.SetCursorPosition(40, 20)
+        Console.WriteLine("the sum of the two numbers is " & X + Y)
+        Console.ReadLine()
+
+    End Sub
+
+End Module
